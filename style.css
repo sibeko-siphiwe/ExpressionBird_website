@@ -49,3 +49,8 @@
 .hero{
     background-image: linear-gradient(to top, #00000005, transparent), url('images/hero-bg.jpg');
 }
+
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,minmax(auto,1fr));
+}
