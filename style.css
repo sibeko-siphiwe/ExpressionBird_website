@@ -6,15 +6,52 @@
 }
 
 .navigation{ 
+    position: fixed;
     background-color: #ffffff50;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px); 
 }
 
-.navigation.scrolled{
+.navigation ul li a{
+    position: relative;
+    padding: 5px;
+}
+
+.navigation ul li a::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1.015px;
+    background: #ef2639;
+    transition: width 0.3s;
+}
+
+.up:hover{
+    scale: 1.05; 
+}
+
+.light:hover{
+    scale: 1.02; 
+    box-shadow: 0 0 10px ef2639;
+    border: 1px solid ef2639;
+    outline: 1px solid ef2639;
+}
+
+.navigation ul li .nav-link:hover {
+    color: #ef2639;
+    font-weight: 500;
+}
+
+.navigation ul li a:hover::after{
+    width: 100%;
+}
+
+.navigation.scrolled{ 
     background-color: #ffffff80;
     backdrop-filter: blur(5px);
     border-bottom: 1px solid #00000010;
-    z-index: 10;
+    z-index: 100;
 }
 
 .heading{
@@ -53,4 +90,34 @@
 .wrapper{
     display: grid;
     grid-template-columns: repeat(3,minmax(auto,1fr));
+}
+
+.partners{
+    background-color: rgb(244, 237, 218);
+}
+
+.ad-wrapper{
+    white-space: nowrap;
+    display: inline-flex; 
+    animation: scroll 70s linear infinite;
+}
+
+@keyframes scroll{
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+.animate{
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.animate.show{
+    opacity: 1;
+    transform: translateY(0);
 }
