@@ -33,3 +33,29 @@ var year = document.getElementById('Year')
 var date = new Date();
 
 year.innerHTML = date.getFullYear();
+
+//  Testimonial Slider
+
+const testimonials = document.querySelectorAll('.testimonial');
+const dots = document.querySelectorAll('.dot');
+
+let current = 0;
+
+function showTestimonial(index) {
+    testimonials.forEach(t => t.classList.remove('active'));
+    dots.forEach(d => d.classList.remove('active'));
+
+    testimonials[index].classList.add('active');
+    dots[index].classList.add('active');
+
+    current = index;
+}
+
+dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => showTestimonial(index));
+});
+ 
+setInterval(() => {
+    let next = (current + 1) % testimonials.length;
+    showTestimonial(next);
+}, 5000);
