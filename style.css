@@ -4,3 +4,8 @@
     box-sizing: border-box;
     transition: .2s all ease;
 }
+
+.heading{
+    font-family: 'Playful Display', serif;
+    font-weight: 700;
+}
