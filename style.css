@@ -5,6 +5,16 @@
     transition: .2s all ease;
 }
 
+.navigation{ 
+    background-color: #ffffff50;
+}
+
+.navigation.scrolled{
+    background-color: #ffffff10;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #00000005;
+}
+
 .heading{
     font-family: 'Playful Display', serif;
     font-weight: 700;
