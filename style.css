@@ -182,8 +182,15 @@
 }
 
 .avatar {
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
+    overflow: hidden;
     background: #00000005;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }

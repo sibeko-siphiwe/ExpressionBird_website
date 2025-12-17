@@ -59,3 +59,21 @@ setInterval(() => {
     let next = (current + 1) % testimonials.length;
     showTestimonial(next);
 }, 5000);
+
+const avatars = document.querySelectorAll('.avatar');
+ 
+fetch(`https://randomuser.me/api/?results=${avatars.length}`)
+    .then(res => res.json())
+    .then(data => {
+        data.results.forEach((user, index) => {
+            const img = document.createElement('img');
+            img.src = user.picture.large;
+            img.alt = `${user.name.first} ${user.name.last}`;
+
+            avatars[index].appendChild(img);
+        });
+    })
+    .catch(err => {
+        console.error('Avatar fetch failed:', err);
+    });
+
