@@ -5,11 +5,21 @@
     transition: .2s all ease;
 }
 
-.navigation{ 
-    position: fixed;
-    top: 0;
+.navigation{  
     background-color: #ffffff50;
     backdrop-filter: blur(5px); 
+    position: fixed;
+    width: 100%;    
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.navigation.scrolled{ 
+    background-color: #ffffff80;
+    backdrop-filter: blur(5px);
+    border-bottom: 1px solid #00000010;
+    z-index: 100;
 }
 
 .navigation ul li a{
@@ -47,13 +57,7 @@
 .navigation ul li a:hover::after{
     width: 100%;
 }
-
-.navigation.scrolled{ 
-    background-color: #ffffff80;
-    backdrop-filter: blur(5px);
-    border-bottom: 1px solid #00000010;
-    z-index: 100;
-}
+ 
 
 .heading{
     font-family: 'Playful Display', serif;
