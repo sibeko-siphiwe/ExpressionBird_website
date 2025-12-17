@@ -84,12 +84,23 @@
 }
 
 .hero{
-    background-image: linear-gradient(to top, #00000005, transparent), url('images/hero-bg.jpg');
+    background-image: linear-gradient(to top, #00000000, transparent), url('images/background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
 }
 
 .wrapper{
     display: grid;
     grid-template-columns: repeat(3,minmax(auto,1fr));
+}
+
+@media (max-width: 1050px) {
+    .wrapper{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    }
 }
 
 .partners{

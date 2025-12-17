@@ -27,3 +27,9 @@ const observer = new IntersectionObserver(
 
 document.querySelectorAll('.animate')
     .forEach(el => observer.observe(el));
+
+var year = document.getElementById('Year')
+
+var date = new Date();
+
+year.innerHTML = date.getFullYear();
