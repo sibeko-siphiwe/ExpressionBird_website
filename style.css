@@ -7,6 +7,7 @@
 
 .navigation{ 
     background-color: #ffffff50;
+    backdrop-filter: blur(5px);
 }
 
 .navigation.scrolled{
@@ -31,6 +32,7 @@
     background: linear-gradient(to top, #ff000010, #ff0000, #ff000010);
     animation: bounce 2s infinite;
 }
+
 
 @keyframes bounce {
     0%{
