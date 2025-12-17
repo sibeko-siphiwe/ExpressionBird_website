@@ -107,23 +107,32 @@
         grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
     }
 }
+ 
 
-.partners{
-    background-color: rgb(244, 237, 218);
+.partners {
+    overflow: hidden;
+    background: #000;
 }
 
-.ad-wrapper{
-    white-space: nowrap;
-    display: inline-flex; 
-    animation: scroll 70s linear infinite;
+.ad-track {
+    display: flex;
+    width: max-content;
+    animation: scroll 40s linear infinite;
 }
 
-@keyframes scroll{
-    from{
-        transform: translateX(100%);
+.ad-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    padding: 1rem;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
     }
-    to{
-        transform: translateX(-100%);
+    to {
+        transform: translateX(-50%);
     }
 }
 
