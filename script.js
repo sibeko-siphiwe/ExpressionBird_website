@@ -28,6 +28,8 @@ const observer = new IntersectionObserver(
 document.querySelectorAll('.animate')
     .forEach(el => observer.observe(el));
 
+    //  date
+
 var year = document.getElementById('Year')
 
 var date = new Date();
