@@ -7,7 +7,7 @@
 
 @font-face {
     font-family: 'Mont';
-    src: url('/fonts/mont-heavy.ttf') format('truetype');
+    src: url('fonts/mont-heavy.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
