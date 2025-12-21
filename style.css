@@ -33,7 +33,7 @@
 }
 
 .navigation ul li a{
-    color: #212121;
+    color: #3f3f3f;
 }
 
 .navigation ul li a:hover{
@@ -72,6 +72,7 @@
 .heading {
     font-family: 'Playful Display', serif;
     font-weight: 700;
+    color: #3f3f3f;
 }
 
 .line-divider {
@@ -110,6 +111,7 @@
 
 .hero h2 {
     font-family: Mont;
+    color: #3f3f3f;
 }
 
 .wrapper {
@@ -316,4 +318,42 @@
 .closure{
     background: radial-gradient(#141528, #010011)
 
+}
+
+/*  New Changes  */
+
+.services{
+    background: #3f3f3f;
+}
+
+.services .wrapper div, .case-study{
+    background: #f4efdd;
+}
+
+.services .wrapper div:hover{
+    background: #ef2639;
+}
+
+.services .wrapper div *{
+    color: #3f3f3f;
+}
+
+.services .wrapper div:hover p, .services .wrapper div:hover a, .services .wrapper div:hover i, .services .wrapper div:hover h4{
+    color: #f4efdd;
+}
+
+.services h2{
+    color: white;
+}
+
+.services button{
+    background: #f4efdd;
+}
+
+.case-study .case{
+    background: #ef2639;
+}
+
+.case-study .case *{
+    color: #f4efdd;
 }
