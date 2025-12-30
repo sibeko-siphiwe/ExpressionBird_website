@@ -415,11 +415,7 @@ body{
     }
 
 }
-
-.testimonial-heading{
-    background: #ef2639;
-    padding: 100px 40px 300px 100px;
-}
+ 
 
 .testimonial-section { 
   overflow: hidden;
@@ -494,7 +490,7 @@ body{
 /* Mobile tweaks */
 @media (max-width: 991px) {
   .testimonial-section {
-    min-height: auto;
+    min-height: fit-content;
   }
 
   .quote {
