@@ -5,6 +5,10 @@
     transition: .2s all ease;
 }
 
+body{
+    background: #f4efdd;
+}
+
 @font-face {
     font-family: 'Mont';
     src: url('fonts/mont-heavy.ttf') format('truetype');
@@ -13,18 +17,14 @@
 }
 
 .navigation { 
-    backdrop-filter: blur(5px);
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 10;
+    backdrop-filter: blur(5px); 
+    z-index: 10000000;
 }
 
 .navigation.scrolled { 
     backdrop-filter: blur(5px);
     border-bottom: 1px solid #00000010;
-    z-index: 100;
+    z-index: 10000;
 }
 
 .navigation ul li a {
@@ -51,9 +51,6 @@
     transition: width 0.3s;
 }
 
-.up:hover {
-    scale: 1.05;
-}
 
 .light:hover {
     scale: 1.02;
@@ -70,7 +67,7 @@
 
 
 .heading {
-    font-family: 'Playful Display', serif;
+    font-family: Mont;
     font-weight: 700;
     color: #3f3f3f;
 }
@@ -101,8 +98,8 @@
     }
 }
 
-.hero {
-    background: #f4efdd;
+.hero { 
+    height: calc(100vh - 45px);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -111,6 +108,11 @@
 
 .hero h2 {
     font-family: Mont;
+    color: #3f3f3f;
+}
+
+.hero p { 
+    font-weight: 600;
     color: #3f3f3f;
 }
 
@@ -322,38 +324,77 @@
 
 /*  New Changes  */
 
-.services{
-    background: #3f3f3f;
+.services .wrapper div{
+    background-color: #f4efdd;
 }
-
-.services .wrapper div, .case-study{
-    background: #f4efdd;
-}
-
-.services .wrapper div:hover{
-    background: #ef2639;
-}
-
-.services .wrapper div *{
+ 
+ 
+.services .wrapper div *, .case-study .case h4, .case-study .case p, .case-study .case h6, .case-study .case small, .case-study .case i{
     color: #3f3f3f;
 }
 
-.services .wrapper div:hover p, .services .wrapper div:hover a, .services .wrapper div:hover i, .services .wrapper div:hover h4{
+
+.services .wrapper div:hover h4{
+    color: #ef2639; 
+}
+
+.expression{
+    background: #f4efdd;
+    color: #3f3f3f;
+}
+
+.expression:hover{
+    border: 1px solid #ef2639;
+}
+
+
+.expression div:hover h4{
+    color: #ef2639;
+}
+
+.services .wrapper div:hover span i{
+    background: #ef2639;
     color: #f4efdd;
 }
 
-.services h2{
-    color: white;
+.case-study .case{
+    background: #ffffff50;
+}
+
+.services .wrapper div:hover, .case-study .case:hover{    
+    border: 1px solid #ef2639;
 }
 
 .services button{
     background: #f4efdd;
 }
 
-.case-study .case{
-    background: #ef2639;
-}
-
+ 
 .case-study .case *{
     color: #f4efdd;
 }
+
+.services .wrapper div span i{ 
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    color: #ef2639;  
+    font-size: 26px;
+}
+
+.bg{
+    background-color: #3f3f3f;
+}
+
+.light-bg{
+    background-color: #ffffff50;
+}
+
+
+.up:hover {
+    scale: 1.05;
+}
+ 

@@ -9,118 +9,129 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-lg navigation" id="navigation">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">
-                    <img src="images/logo.png" alt="Expressionbird Logo" width="55">
-                </a>
-                <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav gap-2">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Industries</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Plugg</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About us</a>
-                        </li> 
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">News</a>
-                        </li> 
-                        <li class="nav-item"> 
-                            <a class="nav-link" href="#">Price</a>
-                        </li>  
-                        <li class="nav-item">
-                            <button class="btn btn-danger w-100 rounded-pill text-white px-4" href="#">Contact us</button>
-                        </li> 
-                    </ul>
-                </div> 
-            </div>
-        </nav>
-    </header>
+<body> 
 
     <main> 
 
-        <div class="hero min-vh-100 d-flex align-items-center position-relative">
+        <div class="position-relative container">
+
+            <header class="position-sticky top-0">
+                <nav class="navbar navbar-expand-lg navigation border mt-3 rounded-pill bg-white py-1" id="navigation">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="images/logo.png" alt="Expressionbird Logo" width="45">
+                        </a>
+                        <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                            <ul class="navbar-nav gap-2">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#">Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Learn & Connect</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Industries</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Plug</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Career</a>
+                                </li> 
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Why Expression</a>
+                                </li>
+                                <li class="nav-item">
+                                    <button class="btn btn-sm btn-danger w-100 rounded-pill text-white px-4" href="#">Contact</button>
+                                </li> 
+                                <li class="nav-item">
+                                    <button class="btn btn-sm btn-outline-dark w-100 rounded-pill px-4" href="#">Join</button>
+                                </li> 
+                            </ul>
+                        </div> 
+                    </div>
+                </nav>
+            </header>
+
+        <div class="hero d-flex align-items-center position-relative">
             <div class="container animate">
                 <h5 class="linear">Expressionist</h5>
                 <h2 class="display-4 fw-bold">In every situation that <br/> requires lucrative marketing,<br/><span class="linear">Let's give you wings</span></h2>
-                <p class="my-4">Affordable, high-impact multimedia marketing that accelerates<br/>growth for well established, startups and growing brands.</p>
-                <button class="btn btn-danger rounded-pill px-4">Get Started</button>
+                <p class="my-4 fw-semibold">Affordable, high-impact multimedia marketing that accelerates<br/>growth for well established, startups and growing brands.</p>
+                <div>
+                    <button class="btn btn-danger rounded-pill px-4">Get Started</button>
+                    <button class="btn btn-outline-dark bg-white rounded-pill px-4">Join</button>
+                </div>
             </div> 
+        </div>
+
         </div>
 
         <!-- Hero -->
 
-        <div class="services">
+        <div class="services bg">
             <div class="container">
                 <div class="py-5">
                     <div class="text-center mb-5 animate">
-                        <h2 class="display-5 heading">Our Services</h2>
-                        <p class="lead text-light">Our core offerings help brands design, launch, and optimize marketing that resonates and converts.</p>
+                        <h2 class="display-6 heading" style="color: #f4efdd">Services</h2>
+                        <p class="lead" style="color: #f4efdd">Our core offerings help brands design, launch, and optimize marketing that resonates and converts.</p>
                     </div>
                     <div class="wrapper gap-5 mb-5 animate">
                         <div class="shadow-sm p-4 rounded up">
-                            <span class="border p-2 rounded d-inline-block">
+                            <span class="rounded d-inline-block">
                                 <i class="fas fa-lightbulb"></i>
                             </span>
                             <h4 class="my-3">Strategy & Planning</h4>
                             <p>Audience research, competitive analysis, channel strategy, KPI definition, roadmaps</p>
-                            <a href="">Learn More <i class="fas fa-arrow-right"></i></a>
+                            <a href="" class="btn btn-danger text-light">Learn More <i class="fas fa-arrow-right text-light"></i></a>
                         </div> 
 
                         <div class="shadow-sm p-4 rounded up">
-                            <span class="border p-2 rounded d-inline-block">
+                            <span class="rounded d-inline-block">
                                 <i class="fas fa-paint-brush"></i>
                             </span>
                             <h4 class="my-3">Branding & Creative</h4>
                             <p>Brand audits, messaging architecture, visual identity, concept development</p>
-                            <a href="">Learn More <i class="fas fa-arrow-right"></i></a>
+                            <a href="" class="btn btn-danger text-light">Learn More <i class="fas fa-arrow-right text-light"></i></a>
                         </div>
 
                         <div class="shadow-sm p-4 rounded up">
-                            <span class="border p-2 rounded d-inline-block">
+                            <span class="rounded d-inline-block">
                                 <i class="fas fa-file-alt"></i>
                             </span>
                             <h4 class="my-3">Content Marketing</h4>
                             <p>Content strategy, editorial calendars, blog/video production, SEO optimization</p>
-                            <a href="">Learn More <i class="fas fa-arrow-right"></i></a>
+                            <a href="" class="btn btn-danger text-light">Learn More <i class="fas fa-arrow-right text-light"></i></a>
                         </div>
 
                         <div class="shadow-sm p-4 rounded up">
-                            <span class="border p-2 rounded d-inline-block">
+                            <span class="rounded d-inline-block">
                                 <i class="fas fa-search"></i>
                             </span>
                             <h4 class="my-3">SEO & SEM</h4>
                             <p>Technical SEO, on-page optimization, audits, PPC management, keyword research</p>
-                            <a href="">Learn More <i class="fas fa-arrow-right"></i></a>
+                            <a href="" class="btn btn-danger text-light">Learn More <i class="fas fa-arrow-right text-light"></i></a>
                         </div>
 
                         <div class="shadow-sm p-4 rounded up">
-                            <span class="border p-2 rounded d-inline-block">
+                            <span class="rounded d-inline-block">
                                 <i class="fas fa-bullhorn"></i>
                             </span>
                             <h4 class="my-3">Paid Social & Media</h4>
                             <p>Campaign setup, audience targeting, ad copywriting, testing, reporting</p>
-                            <a href="">Learn More <i class="fas fa-arrow-right"></i></a>
+                            <a href="" class="btn btn-danger text-light">Learn More <i class="fas fa-arrow-right text-light"></i></a>
                         </div>
 
                         <div class="shadow-sm p-4 rounded up">
-                            <span class="border p-2 rounded d-inline-block">
+                            <span class="rounded d-inline-block">
                                 <i class="fas fa-envelope"></i>
                             </span>
                             <h4 class="my-3">Analytics & CRO</h4>
                             <p>GA4/Tag Manager setup, dashboards, CRO, A/B testing</p>
-                            <a href="">Learn More <i class="fas fa-arrow-right"></i></a>
+                            <a href="" class="btn btn-danger text-light">Learn More <i class="fas fa-arrow-right text-light"></i></a>
                         </div>
                     </div>
                     <button class="btn border px-3 d-block mx-auto animate">Load More<i class="fas fa-arrow-right ms-2 fa-1x"></i></button>
@@ -130,15 +141,34 @@
 
         <!-- Our Clients -->
 
-        <div class="pt-5 bg-light">
+        <div class="pt-5 light-bg">
             <div class="container">
-                <div class="text-center mb-5 animate">
-                    <h2 class="display-5 heading">Our Clients</h2>
+                <div class="text-center animate">
+                    <h2 class="display-6 heading">Our Clients</h2>
                     <p class="lead text-muted">We drive sustainable business growth by designing clear user journeys and executing high-impact digital marketing and sales campaigns powered by automation, data-driven visibility, and seamless integrations.</p>
                 </div>
+
+                <div>
+                    <img src="" alt="Client logo"> 
+                    <img src="" alt="Client logo"> 
+                    <img src="" alt="Client logo"> 
+                    <img src="" alt="Client logo"> 
+                    <img src="" alt="Client logo"> 
+                    <img src="" alt="Client logo"> 
+                    <img src="" alt="Client logo"> 
+                    <img src="" alt="Client logo"> 
+                    <img src="" alt="Client logo"> 
+                    <img src="" alt="Client logo"> 
+                    <img src="" alt="Client logo"> 
+                    <img src="" alt="Client logo"> 
+                    <img src="" alt="Client logo"> 
+                    <img src="" alt="Client logo"> 
+                    <img src="" alt="Client logo"> 
+                </div>
+
             </div>
 
-            <div class="partners overflow-hidden bg-dark p-2">
+            <!-- <div class="partners overflow-hidden bg-dark p-2">
                 <div class="ad-track">
                     <div class="ad-wrapper">
                         <img src="images/580b57fcd9996e24bc43c1f2.png" width="150" alt="Sprite">
@@ -146,8 +176,7 @@
                         <img src="images/58483b9e84e35b574e745386.png" width="150" alt="Universal" style="filter: invert();">
                         <img src="images/toppng.com-sony-music-logo-sony-music-canada-logo-445x93.png" width="150" alt="Sony Music">
                     </div>
-
-                    <!-- clone -->
+ 
                     <div class="ad-wrapper">
                         <img src="images/58737bd3f3a71010b5e8ef37.png" width="150" alt="">
                         <img src="images/580b57fcd9996e24bc43c1f2.png" width="150" alt="">
@@ -155,314 +184,20 @@
                         <img src="images/toppng.com-sony-music-logo-sony-music-canada-logo-445x93.png" width="150" alt="">
                     </div>
                 </div>
-            </div>
+            </div> -->
 
-        </div>
-
-        <!-- Case Study -->
-
-        <div class="case-study">
-            <div class="container py-5">
-                <div class="text-center mb-5 animate">
-                    <h2 class="display-5 heading">Proven Success, Real Results</h2>
-                    <p class="lead text-muted">Explore how Expressionbird transforms brands with creative, data-driven strategies. Our case studies showcase measurable impact, innovative campaigns, and the tangible growth we deliver for clients across industries</p>
-                </div>
-                <div class="d-flex flex-column gap-4">
-                    <div class="case border rounded shadow-sm animate">
-                        <div class="p-4">
-                            <span class="p-2 bg-danger shadow-sm rounded text-white">Rapid Launch & Awareness</span>
-                            <h4 class="my-3">The Green Sprout</h4>
-                            <div class="row gap-5 gap-sm-2">
-                                <div class="col-md">
-                                    <h6>Goal</h6>
-                                    <p>Launch a sustainable food delivery brand in a competitive urban market</p>
-                                </div>
-                                <div class="col-md">
-                                    <h6>Challenge</h6>
-                                    <p>Zero brand recognition, tight timeline, limited initial budget</p>
-                                </div>
-                                <div class="col-md">
-                                    <h6>Solution</h6>
-                                    <ul class="navbar-nav">
-                                        <li class="nav-item">
-                                            <i class="fas fa-link me-2"></i>
-                                            <small>Integrated branding and social-first content strategy.</small>
-                                        </li>
-                                        <li class="nav-item">
-                                            <i class="fas fa-link me-2"></i>
-                                            <small>Targeted paid social campaigns on Instagram and Facebook.</small>
-                                        </li>
-                                        <li class="nav-item">
-                                            <i class="fas fa-link me-2"></i>
-                                            <small>SEO-optimized blog and local search presence.</small>
-                                        </li>
-                                        <li class="nav-item">
-                                            <i class="fas fa-link me-2"></i>
-                                            <small>Influencer partnerships and user-generated content</small>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <hr />
-                            <div>
-                                <h4 class="mb-3">Key Results</h4> 
-                                <div class="row gap-5 gap-sm-2">
-                                    <div class="col-md">
-                                        <h2 class="text-success">12K+</h2>
-                                        <h6>Social Followers in 90 days</h6>
-                                    </div>
-                                    <div class="col-md">
-                                        <h2 class="text-success">4.8x</h2>
-                                        <h6>ROAS on paid campaigns</h6>
-                                    </div>
-                                    <div class="col-md">
-                                        <h2 class="text-success">850%</h2>
-                                        <h6>Website traffic increase</h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <div class="case border rounded shadow-sm animate">
-                        <div class="p-4">
-                            <span class="p-2 bg-danger shadow-sm rounded text-white">Long-Term SEO & Authority Building</span>
-                            <h4 class="my-3">PrimeTech Solutions</h4>
-                            <div class="row gap-5 gap-sm-2">
-                                <div class="col-md">
-                                    <h6>Goal</h6>
-                                    <p>Establish thought leadership in B2B SaaS space and drive organic leads</p>
-                                </div>
-                                <div class="col-md">
-                                    <h6>Challenge</h6>
-                                    <p>Low domain authority, generic content, minimal organic visibility</p>
-                                </div>
-                                <div class="col-md">
-                                    <h6>Solution</h6>
-                                    <ul class="navbar-nav">
-                                        <li class="nav-item">
-                                            <i class="fas fa-link me-2"></i>
-                                            <small>Comprehensive SEO audit and technical optimization.</small>
-                                        </li>
-                                        <li class="nav-item">
-                                            <i class="fas fa-link me-2"></i>
-                                            <small>Authority-building content strategy with pillar pages.</small>
-                                        </li>
-                                        <li class="nav-item">
-                                            <i class="fas fa-link me-2"></i>
-                                            <small>Strategic link-building and PR outreach.</small>
-                                        </li>
-                                        <li class="nav-item">
-                                            <i class="fas fa-link me-2"></i>
-                                            <small>Conversion-focused landing pages</small>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <hr />
-                            <div>
-                                <h4 class="mb-3">Key Results</h4>
-                                <div class="row gap-5 gap-sm-2">
-                                    <div class="col-md">
-                                        <h2 class="text-success">340%</h2>
-                                        <h6>Organic traffic growth in 12 months</h6>
-                                    </div>
-                                    <div class="col-md">
-                                        <h2 class="text-success">Page 1</h2>
-                                        <h6>Rankings for 47 target keywords</h6>
-                                    </div>
-                                    <div class="col-md">
-                                        <h2 class="text-success">3x</h2>
-                                        <h6>Increase in qualified leads</h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="case border rounded shadow-sm animate">
-                        <div class="p-4">
-                            <span class="p-2 bg-danger shadow-sm rounded text-white">Multimedia Campaign for Engagement</span>
-                            <h4 class="my-3">MetroFit Gyms</h4>
-                            <div class="row gap-5 gap-sm-2">
-                                <div class="col-md">
-                                    <h6>Goal</h6>
-                                    <p>Re-engage members and attract new sign-ups post-pandemic</p>
-                                </div>
-                                <div class="col-md">
-                                    <h6>Challenge</h6>
-                                    <p>Declining membership, dated brand perception, low engagement</p>
-                                </div>
-                                <div class="col-md">
-                                    <h6>Solution</h6>
-                                    <ul class="navbar-nav">
-                                        <li class="nav-item">
-                                            <i class="fas fa-link me-2"></i>
-                                            <small>Rebrand with fresh visual identity and messaging.</small>
-                                        </li>
-                                        <li class="nav-item">
-                                            <i class="fas fa-link me-2"></i>
-                                            <small>Video-first content showcasing community and results.</small>
-                                        </li>
-                                        <li class="nav-item">
-                                            <i class="fas fa-link me-2"></i>
-                                            <small>Integrated email nurture campaigns.</small>
-                                        </li>
-                                        <li class="nav-item">
-                                            <i class="fas fa-link me-2"></i>
-                                            <small>Retargeting campaigns and local paid search</small>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <hr />
-                            <div>
-                                <h4 class="mb-3">Key Results</h4>
-                                <div class="row gap-5 gap-sm-2">
-                                    <div class="col-md">
-                                        <h2 class="text-success">65%+</h2>
-                                        <h6>Increase in new memberships</h6>
-                                    </div>
-                                    <div class="col-md">
-                                        <h2 class="text-success">4.2M+</h2>
-                                        <h6>Video views across platforms</h6>
-                                    </div>
-                                    <div class="col-md">
-                                        <h2 class="text-success">89%</h2>
-                                        <h6>Email open rate on nurture campaigns</h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Why Expressionbird -->
-
-        <div class="bg-light">
-            <div class="py-5 container">
-                <div class="text-center mb-5 animate">
-                    <h2 class="display-5 heading">Why Expressionbird</h2>
-                    <p class="lead text-muted">We deliver creative, data-driven marketing and multimedia solutions that drive measurable results. Affordable, tailored, and transparent.</p>
-                </div>
-                <div class="row g-4 mb-5">
-                    <div class="col-md-6 animate">
-                        <div class="p-3 bg-white position-relative shadow-sm light">
-                            <div class="position-absolute start-0 top-0 bottom-0 border-black my-2 rounded-end bg-body-secondary light" style="width: 4px;"></div>
-                            <div class="ps-2">
-                                <i class="fas fa-cash"></i>
-                                <h4 class="fw-light">Affordability Without Compromise</h4>
-                                <small class="text-muted">
-                                    premium quality at startup-friendly prices. We deliver world-class strategies and execution at rates that make strategic marketing accessible to growing businesses.
-                                </small>
-                                <ul class="navbar-nav mt-2">
-                                    <li class="nav-item">
-                                        <small><i class="me-2">●</i>Transparent, value-based pricing</small>
-                                    </li>
-                                    <li class="nav-item">
-                                        <small><i class="me-2">●</i>Flexible engagement models</small>
-                                    </li>
-                                    <li class="nav-item">
-                                        <small><i class="me-2">●</i>No hidden fees or surprises</small>
-                                    </li>
-                                    <li class="nav-item">
-                                        <small><i class="me-2">●</i>Maximum ROI on every investment</small>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 animate">
-                        <div class="p-3 bg-white position-relative shadow-sm light">
-                            <div class="position-absolute start-0 top-0 bottom-0 border-black my-2 rounded-end bg-body-secondary light" style="width: 4px;"></div>
-                            <div class="ps-2">
-                                <i class="fas fa-cash"></i>
-                                <h4 class="fw-light">Data-Driven,Measurable Results</h4>
-                                <small class="text-muted">
-                                    rigorous analytics and dashboards. Every decision we make is backed by data. We do not rely on gut feelings or creative intuition alone. We use analytics to guide strategy and measure success.
-                                </small>
-                                <ul class="navbar-nav mt-2">
-                                    <li class="nav-item">
-                                        <small><i class="me-2">●</i>Advanced analytics and reporting</small>
-                                    </li>
-                                    <li class="nav-item">
-                                        <small><i class="me-2">●</i>Clear performance metrics</small>
-                                    </li>
-                                    <li class="nav-item">
-                                        <small><i class="me-2">●</i>Continuous optimization</small>
-                                    </li>
-                                    <li class="nav-item">
-                                        <small><i class="me-2">●</i>Quantifiable business impact</small>
-                                    </li>
-                                    </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 animate">
-                        <div class="p-3 bg-body position-relative shadow-sm light">
-                            <div class="position-absolute start-0 top-0 bottom-0 border-black my-2 rounded-end bg-body-secondary light" style="width: 4px;"></div>
-                            <div class="ps-2">
-                                <i class="fas fa-cash"></i>
-                                <h4 class="fw-light">Integrated, Cross-Channel Execution</h4>
-                                <small class="text-muted">
-                                    cohesive customer journeys. Your customers do not live in silos and your marketing should not either. We deliver integrated campaigns that work seamlessly across digital and traditional channels.
-                                </small>
-                                <ul class="navbar-nav mt-2">
-                                    <li class="nav-item">
-                                        <small><i class="me-2">●</i>Unified brand messaging</small>
-                                    </li>
-                                    <li class="nav-item">
-                                        <small><i class="me-2">●</i>Coordinated campaign execution</small>
-                                    </li>
-                                    <li class="nav-item">
-                                        <small><i class="me-2">●</i>Multi-platform expertise</small>
-                                    </li>
-                                    <li class="nav-item">
-                                        <small><i class="me-2">●</i>Consistent customer experience</small>
-                                    </li>
-                                    </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 animate">
-                        <div class="p-3 bg-body position-relative shadow-sm light">
-                            <div class="position-absolute start-0 top-0 bottom-0 border-black my-2 rounded-end bg-body-secondary light" style="width: 4px;"></div>
-                            <div class="ps-2">
-                                <i class="fas fa-cash"></i>
-                                <h4 class="fw-light">Transparent Collaboration</h4>
-                                <small class="text-muted">
-                                    regular reviews, open communication. We work as an extension of your team, maintaining open communication and complete transparency throughout every stage of our partnership.
-                                </small>
-                                <ul class="navbar-nav mt-2">
-                                    <li class="nav-item">
-                                        <small><i class="me-2">●</i>Regular progress updates</small>
-                                    </li>
-                                    <li class="nav-item">
-                                        <small><i class="me-2">●</i>Direct access to strategists</small>
-                                    </li>
-                                    <li class="nav-item">
-                                        <small><i class="me-2">●</i>Collaborative planning process</small>
-                                    </li>
-                                    <li class="nav-item">
-                                        <small><i class="me-2">●</i>Full visibility into results</small>
-                                    </li>
-                                    </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <p class="text-center text-muted animate">We redefine how brands connect with audiences by delivering unparalleled, high-impact marketing solutions that drive growth and lasting loyalty</p>
-            </div>
-        </div>
-
-        <!-- Testimonial -->
+        </div><!-- Testimonial -->
 
         <div>
-            <div class="container py-5">
-                <div class="text-center mb-5 animate">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3 bg-danger py-5">
+                        <h2 class="heading display-6 text-light">Client Testimonial</h2>
+                        <p class="text-light fw-bold">Trusted by Brands That Grow See why our clients love working with Expressionbird creative, data-driven solutions that deliver real results.</p>
+                    </div>
+                    <div class="col-md bg"></div>
+                </div>
+                <!-- <div class="text-center mb-5 animate">
                     <h2 class="display-5 heading">Trusted by Brands That Grow</h2>
                     <p class="lead text-muted">
                         See why our clients love working with Expressionbird, We produce creative, data-driven solutions that deliver real results.
@@ -536,8 +271,7 @@
                             If you want results, these are the experts.
                         </p>
                     </div>
-
-                    <!-- DOTS -->
+ 
                     <div class="dots mt-4">
                         <span class="dot active"></span>
                         <span class="dot"></span>
@@ -545,14 +279,310 @@
                         <span class="dot"></span>
                         <span class="dot"></span>
                     </div>
-                </div>
+                </div> -->
+            </div>
+        </div>
+        
+        <!-- Case Study -->
 
+        <div class="case-study">
+            <div class="container py-5">
+                <div class="text-start mb-5 animate">
+                    <h2 class="display-5 heading">Proven Success,<br/>Real Results</h2>
+                    <p class="text-dark fw-bold">Explore how Expressionbird transforms brands with creative, data-driven<br/>strategies. Our case studies showcase measurable impact, innovative<br/>campaigns, and the tangible growth we deliver for clients across industries</p>
+                </div>
+                <div class="d-flex flex-column gap-4">
+                    <div class="case rounded shadow-sm animate">
+                        <div class="p-4">
+                            <span class="p-2 bg-danger shadow-sm rounded text-white">Rapid Launch & Awareness</span>
+                            <h4 class="my-3">The Green Sprout</h4>
+                            <div class="row gap-5 gap-sm-2">
+                                <div class="col-md">
+                                    <h6>Goal</h6>
+                                    <p>Launch a sustainable food delivery brand in a competitive urban market</p>
+                                </div>
+                                <div class="col-md">
+                                    <h6>Challenge</h6>
+                                    <p>Zero brand recognition, tight timeline, limited initial budget</p>
+                                </div>
+                                <div class="col-md">
+                                    <h6>Solution</h6>
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item">
+                                            <i class="fas fa-link me-2"></i>
+                                            <small>Integrated branding and social-first content strategy.</small>
+                                        </li>
+                                        <li class="nav-item">
+                                            <i class="fas fa-link me-2"></i>
+                                            <small>Targeted paid social campaigns on Instagram and Facebook.</small>
+                                        </li>
+                                        <li class="nav-item">
+                                            <i class="fas fa-link me-2"></i>
+                                            <small>SEO-optimized blog and local search presence.</small>
+                                        </li>
+                                        <li class="nav-item">
+                                            <i class="fas fa-link me-2"></i>
+                                            <small>Influencer partnerships and user-generated content</small>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr />
+                            <div>
+                                <h4 class="mb-3">Key Results</h4> 
+                                <div class="row gap-5 gap-sm-2">
+                                    <div class="col-md">
+                                        <h2 class="text-danger">12K+</h2>
+                                        <h6>Social Followers in 90 days</h6>
+                                    </div>
+                                    <div class="col-md">
+                                        <h2 class="text-danger">4.8x</h2>
+                                        <h6>ROAS on paid campaigns</h6>
+                                    </div>
+                                    <div class="col-md">
+                                        <h2 class="text-danger">850%</h2>
+                                        <h6>Website traffic increase</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="case rounded shadow-sm animate">
+                        <div class="p-4">
+                            <span class="p-2 bg-danger shadow-sm rounded text-white">Long-Term SEO & Authority Building</span>
+                            <h4 class="my-3">PrimeTech Solutions</h4>
+                            <div class="row gap-5 gap-sm-2">
+                                <div class="col-md">
+                                    <h6>Goal</h6>
+                                    <p>Establish thought leadership in B2B SaaS space and drive organic leads</p>
+                                </div>
+                                <div class="col-md">
+                                    <h6>Challenge</h6>
+                                    <p>Low domain authority, generic content, minimal organic visibility</p>
+                                </div>
+                                <div class="col-md">
+                                    <h6>Solution</h6>
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item">
+                                            <i class="fas fa-link me-2"></i>
+                                            <small>Comprehensive SEO audit and technical optimization.</small>
+                                        </li>
+                                        <li class="nav-item">
+                                            <i class="fas fa-link me-2"></i>
+                                            <small>Authority-building content strategy with pillar pages.</small>
+                                        </li>
+                                        <li class="nav-item">
+                                            <i class="fas fa-link me-2"></i>
+                                            <small>Strategic link-building and PR outreach.</small>
+                                        </li>
+                                        <li class="nav-item">
+                                            <i class="fas fa-link me-2"></i>
+                                            <small>Conversion-focused landing pages</small>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div> 
+                            <div>
+                                <h4 class="mb-3">Key Results</h4>
+                                <div class="row gap-5 gap-sm-2">
+                                    <div class="col-md">
+                                        <h2 class="text-danger">340%</h2>
+                                        <h6>Organic traffic growth in 12 months</h6>
+                                    </div>
+                                    <div class="col-md">
+                                        <h2 class="text-danger">Page 1</h2>
+                                        <h6>Rankings for 47 target keywords</h6>
+                                    </div>
+                                    <div class="col-md">
+                                        <h2 class="text-danger">3x</h2>
+                                        <h6>Increase in qualified leads</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- <div class="case rounded shadow-sm animate">
+                        <div class="p-4">
+                            <span class="p-2 bg-danger shadow-sm rounded text-white">Multimedia Campaign for Engagement</span>
+                            <h4 class="my-3">MetroFit Gyms</h4>
+                            <div class="row gap-5 gap-sm-2">
+                                <div class="col-md">
+                                    <h6>Goal</h6>
+                                    <p>Re-engage members and attract new sign-ups post-pandemic</p>
+                                </div>
+                                <div class="col-md">
+                                    <h6>Challenge</h6>
+                                    <p>Declining membership, dated brand perception, low engagement</p>
+                                </div>
+                                <div class="col-md">
+                                    <h6>Solution</h6>
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item">
+                                            <i class="fas fa-link me-2"></i>
+                                            <small>Rebrand with fresh visual identity and messaging.</small>
+                                        </li>
+                                        <li class="nav-item">
+                                            <i class="fas fa-link me-2"></i>
+                                            <small>Video-first content showcasing community and results.</small>
+                                        </li>
+                                        <li class="nav-item">
+                                            <i class="fas fa-link me-2"></i>
+                                            <small>Integrated email nurture campaigns.</small>
+                                        </li>
+                                        <li class="nav-item">
+                                            <i class="fas fa-link me-2"></i>
+                                            <small>Retargeting campaigns and local paid search</small>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="border-black my-3"></div>
+                            <div>
+                                <h4 class="mb-3">Key Results</h4>
+                                <div class="row gap-5 gap-sm-2">
+                                    <div class="col-md">
+                                        <h2 class="text-success">65%+</h2>
+                                        <h6>Increase in new memberships</h6>
+                                    </div>
+                                    <div class="col-md">
+                                        <h2 class="text-success">4.2M+</h2>
+                                        <h6>Video views across platforms</h6>
+                                    </div>
+                                    <div class="col-md">
+                                        <h2 class="text-success">89%</h2>
+                                        <h6>Email open rate on nurture campaigns</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Why Expressionbird -->
+
+        <div class="bg">
+            <div class="py-5 container">
+                <div class="text-start mb-5 animate">
+                    <h2 class="display-5 heading" style="color: #f4efdd">Standout</h2>
+                    <p class="fw-bold" style="color: #f4efdd">Explore how Expressionbird transforms brands with creative, data-driven<br/>strategies. Our case studies showcase measurable impact, innovative<br/>campaigns, and the tangible growth we deliver for clients across<br/>industries</p>
+                </div>
+                <div class="row g-4 mb-5">
+                    <div class="col-md-6 animate">
+                        <div class="p-3 position-relative shadow-sm light expression">
+                            <div class="position-absolute start-0 top-0 bottom-0 border-black my-2 rounded-end bg-body-secondary light" style="width: 4px;"></div>
+                            <div class="ps-2">
+                                <i class="fas fa-cash"></i>
+                                <h4>Affordability Without Compromise</h4>
+                                <small>
+                                    premium quality at startup-friendly prices. We deliver world-class strategies and execution at rates that make strategic marketing accessible to growing businesses.
+                                </small>
+                                <ul class="navbar-nav mt-2">
+                                    <li class="nav-item">
+                                        <small><i class="me-2">●</i>Transparent, value-based pricing</small>
+                                    </li>
+                                    <li class="nav-item">
+                                        <small><i class="me-2">●</i>Flexible engagement models</small>
+                                    </li>
+                                    <li class="nav-item">
+                                        <small><i class="me-2">●</i>No hidden fees or surprises</small>
+                                    </li>
+                                    <li class="nav-item">
+                                        <small><i class="me-2">●</i>Maximum ROI on every investment</small>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 animate">
+                        <div class="p-3 position-relative shadow-sm light expression">
+                            <div class="position-absolute start-0 top-0 bottom-0 border-black my-2 rounded-end bg-body-secondary light" style="width: 4px;"></div>
+                            <div class="ps-2">
+                                <i class="fas fa-cash"></i>
+                                <h4 >Data-Driven,Measurable Results</h4>
+                                <small >
+                                    rigorous analytics and dashboards. Every decision we make is backed by data. We do not rely on gut feelings or creative intuition alone. We use analytics to guide strategy and measure success.
+                                </small>
+                                <ul class="navbar-nav mt-2">
+                                    <li class="nav-item">
+                                        <small><i class="me-2">●</i>Advanced analytics and reporting</small>
+                                    </li>
+                                    <li class="nav-item">
+                                        <small><i class="me-2">●</i>Clear performance metrics</small>
+                                    </li>
+                                    <li class="nav-item">
+                                        <small><i class="me-2">●</i>Continuous optimization</small>
+                                    </li>
+                                    <li class="nav-item">
+                                        <small><i class="me-2">●</i>Quantifiable business impact</small>
+                                    </li>
+                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 animate">
+                        <div class="p-3  position-relative shadow-sm light expression">
+                            <div class="position-absolute start-0 top-0 bottom-0 border-black my-2 rounded-end bg-body-secondary light" style="width: 4px;"></div>
+                            <div class="ps-2">
+                                <i class="fas fa-cash"></i>
+                                <h4 >Integrated, Cross-Channel Execution</h4>
+                                <small>
+                                    cohesive customer journeys. Your customers do not live in silos and your marketing should not either. We deliver integrated campaigns that work seamlessly across digital and traditional channels.
+                                </small>
+                                <ul class="navbar-nav mt-2">
+                                    <li class="nav-item">
+                                        <small><i class="me-2">●</i>Unified brand messaging</small>
+                                    </li>
+                                    <li class="nav-item">
+                                        <small><i class="me-2">●</i>Coordinated campaign execution</small>
+                                    </li>
+                                    <li class="nav-item">
+                                        <small><i class="me-2">●</i>Multi-platform expertise</small>
+                                    </li>
+                                    <li class="nav-item">
+                                        <small><i class="me-2">●</i>Consistent customer experience</small>
+                                    </li>
+                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 animate">
+                        <div class="p-3 position-relative shadow-sm light expression">
+                            <div class="position-absolute start-0 top-0 bottom-0 border-black my-2 rounded-end bg-body-secondary light" style="width: 4px;"></div>
+                            <div class="ps-2">
+                                <i class="fas fa-cash"></i>
+                                <h4>Transparent Collaboration</h4>
+                                <small>
+                                    regular reviews, open communication. We work as an extension of your team, maintaining open communication and complete transparency throughout every stage of our partnership.
+                                </small>
+                                <ul class="navbar-nav mt-2">
+                                    <li class="nav-item">
+                                        <small><i class="me-2">●</i>Regular progress updates</small>
+                                    </li>
+                                    <li class="nav-item">
+                                        <small><i class="me-2">●</i>Direct access to strategists</small>
+                                    </li>
+                                    <li class="nav-item">
+                                        <small><i class="me-2">●</i>Collaborative planning process</small>
+                                    </li>
+                                    <li class="nav-item">
+                                        <small><i class="me-2">●</i>Full visibility into results</small>
+                                    </li>
+                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
         <!-- Our Approach -->
 
-        <div class="bg-light py-5">
+        <div class="py-5">
             <div class="container">
                 <div class="text-center mb-5 animate">
                     <h2 class="display-5 heading emphasis">Our Approach</h2>
