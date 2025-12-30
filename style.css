@@ -398,3 +398,20 @@ body{
     scale: 1.05;
 }
  
+
+.logos{
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly;
+
+    img{
+        width: 150px;
+    }
+
+}
+
+.testimonial-heading{
+    background: #ef2639;
+    padding: 100px 40px 300px 100px;
+}
