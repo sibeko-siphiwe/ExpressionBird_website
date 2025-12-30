@@ -39,43 +39,37 @@ year.innerHTML = date.getFullYear();
 //  Testimonial Slider
 
 const testimonials = document.querySelectorAll('.testimonial');
-const dots = document.querySelectorAll('.dot');
+  let index = 0;
+  let interval;
 
-let current = 0;
-
-function showTestimonial(index) {
+  function showTestimonial(i) {
     testimonials.forEach(t => t.classList.remove('active'));
-    dots.forEach(d => d.classList.remove('active'));
+    testimonials[i].classList.add('active');
+  }
 
-    testimonials[index].classList.add('active');
-    dots[index].classList.add('active');
+  function nextTestimonial() {
+    index = (index + 1) % testimonials.length;
+    showTestimonial(index);
+  }
 
-    current = index;
-}
+  function prevTestimonial() {
+    index = (index - 1 + testimonials.length) % testimonials.length;
+    showTestimonial(index);
+  }
 
-dots.forEach((dot, index) => {
-    dot.addEventListener('click', () => showTestimonial(index));
-});
- 
-setInterval(() => {
-    let next = (current + 1) % testimonials.length;
-    showTestimonial(next);
-}, 5000);
+  document.getElementById('next').addEventListener('click', () => {
+    nextTestimonial();
+    resetInterval();
+  });
 
-const avatars = document.querySelectorAll('.avatar');
- 
-fetch(`https://randomuser.me/api/?results=${avatars.length}`)
-    .then(res => res.json())
-    .then(data => {
-        data.results.forEach((user, index) => {
-            const img = document.createElement('img');
-            img.src = user.picture.large;
-            img.alt = `${user.name.first} ${user.name.last}`;
+  document.getElementById('prev').addEventListener('click', () => {
+    prevTestimonial();
+    resetInterval();
+  });
 
-            avatars[index].appendChild(img);
-        });
-    })
-    .catch(err => {
-        console.error('Avatar fetch failed:', err);
-    });
+  function resetInterval() {
+    clearInterval(interval);
+    interval = setInterval(nextTestimonial, 5000);
+  }
 
+  interval = setInterval(nextTestimonial, 5000);
