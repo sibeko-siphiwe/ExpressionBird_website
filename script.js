@@ -73,3 +73,36 @@ const testimonials = document.querySelectorAll('.testimonial');
   }
 
   interval = setInterval(nextTestimonial, 5000);
+
+  /*    nav */
+
+  const header = document.querySelector('.site-header');
+  const hero = document.querySelector('.hero');
+
+  let lastScrollY = window.scrollY;
+  let heroBottom = hero.offsetTop + hero.offsetHeight;
+
+  window.addEventListener('scroll', () => {
+    const currentScrollY = window.scrollY;
+    heroBottom = hero.offsetTop + hero.offsetHeight;
+
+    // While hero is visible → header always visible
+    if (currentScrollY < heroBottom) {
+      header.style.transform = 'translateY(0)';
+      header.style.opacity = '1';
+      return;
+    }
+
+    // After hero
+    if (currentScrollY > lastScrollY) {
+      // scrolling down
+      header.style.transform = 'translateY(-120%)';
+      header.style.opacity = '0';
+    } else {
+      // scrolling up
+      header.style.transform = 'translateY(0)';
+      header.style.opacity = '1';
+    }
+
+    lastScrollY = currentScrollY;
+  });

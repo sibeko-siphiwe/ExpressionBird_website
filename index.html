@@ -13,69 +13,83 @@
 
     <main> 
 
-        <div class="position-relative container">
+        <header class="site-header position-sticky container">
+        <nav class="navbar navbar-expand-lg navigation border mt-3 rounded-pill bg-white py-1 animate" id="navigation">
+            <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="Expressionbird Logo" width="45">
+            </a>
 
-            <header class="position-sticky top-0">
-                <nav class="navbar navbar-expand-lg navigation border mt-3 rounded-pill bg-white py-1 animate" id="navigation">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="index.html">
-                            <img src="images/logo.png" alt="Expressionbird Logo" width="45">
-                        </a>
-                        <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                            <ul class="navbar-nav gap-2">
-                                <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="#">Services</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Learn & Connect</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Industries</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Plug</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Career</a>
-                                </li> 
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Why Expression</a>
-                                </li>
-                                <li class="nav-item">
-                                    <button class="btn btn-sm btn-danger w-100 rounded-pill text-white px-4" href="#">Contact</button>
-                                </li> 
-                                <li class="nav-item">
-                                    <button class="btn btn-sm btn-outline-dark w-100 rounded-pill px-4" href="#">Join</button>
-                                </li> 
-                            </ul>
-                        </div> 
-                    </div>
-                </nav>
-            </header>
+            <button
+                class="navbar-toggler navbar-light"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="hero d-flex align-items-center">
-            <div class="row align-items-center">
-                <div class="col-md-7">
-                    <div class="container animate">
-                        <h5 class="linear">Expressionist</h5>
-                        <h2 class="display-5 fw-bold">In every situation that <br/> requires lucrative marketing,<br/><span class="linear">Let's give you wings</span></h2>
-                        <p class="my-4 fw-semibold">Affordable, high-impact multimedia marketing that accelerates<br/>growth for well established, startups and growing brands.</p>
-                        <div>
-                            <button class="btn btn-danger rounded-pill px-4">Get Started</button>
-                            <button class="btn btn-outline-dark bg-white rounded-pill px-4">Join</button>
-                        </div>
-                    </div> 
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav gap-2 align-items-lg-center">
+
+                <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Learn & Connect</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Industries</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Plug</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Career</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Why Expression</a></li>
+
+                <li class="nav-item">
+                    <a class="btn btn-sm btn-danger w-100 rounded-pill text-white px-4" href="#">
+                    Contact
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="btn btn-sm btn-outline-dark w-100 rounded-pill px-4" href="#">
+                    Join
+                    </a>
+                </li>
+
+                </ul>
+            </div>
+            </div>
+        </nav>
+        </header>
+
+        <div class="container position-relative">
+
+        <section class="hero d-flex align-items-center">
+            <div class="row align-items-center w-100">
+            <div class="col-md-7">
+                <div class="animate">
+                <h5 class="linear">Expressionist</h5>
+                <h2 class="display-5 fw-bold">
+                    In every situation that <br>
+                    requires lucrative marketing,<br>
+                    <span class="linear">Let's give you wings</span>
+                </h2>
+                <p class="my-4 fw-semibold">
+                    Affordable, high-impact multimedia marketing that accelerates<br>
+                    growth for well established, startups and growing brands.
+                </p>
+                <div>
+                    <a class="btn btn-danger rounded-pill px-4" href="#">Get Started</a>
+                    <a class="btn btn-outline-dark bg-white rounded-pill px-4" href="#">Join</a>
                 </div>
-                <div class="col-md">
-                    <img src="/images/hero.jpg" alt="xpression hero image" class="img-fluid animate">
                 </div>
             </div>
-        </div>
+
+            <div class="col-md">
+                <img src="/images/hero.jpg" alt="Expression hero image" class="img-fluid animate">
+            </div>
+            </div>
+        </section>
 
         </div>
+
 
         <!-- Hero -->
 
